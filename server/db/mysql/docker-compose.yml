@@ -3,10 +3,9 @@ services:
   mysql:
     image: mysql:5.6
     environment:
-      - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=password
+      - MYSQL_ROOT_PASSWORD=password
     ports:
-      - "127.0.0.1:3307:3306"
+      - "127.0.0.1:3306:3306"
     volumes:
       - ./data:/var/lib/mysql
     command: mysqld --character-set-server=tis620 --collation-server=tis620_thai_ci
