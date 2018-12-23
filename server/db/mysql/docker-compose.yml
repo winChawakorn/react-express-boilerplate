@@ -4,10 +4,11 @@ services:
     image: mysql:5.6
     environment:
       - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=munkong
     ports:
       - "127.0.0.1:3306:3306"
     volumes:
       - ./data:/var/lib/mysql
     command: mysqld --character-set-server=tis620 --collation-server=tis620_thai_ci
     restart: always
-    container_name: mysql
+    container_name: munkong-mysql
