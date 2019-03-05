@@ -7,6 +7,8 @@ const app = express()
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+const PORT = '8888'
+
 app.listen(PORT, () => {
   console.log(`[${moment().format()}] Server started on port ${PORT}`)
 })
