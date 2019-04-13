@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export default class Applications extends PureComponent {
   componentDidMount() {
-    axios.get('/applications')
+    axios.get('/events')
       .then(res => console.log(res.data))
       .catch(err => console.log(err))
   }
@@ -11,7 +11,7 @@ export default class Applications extends PureComponent {
   render() {
     return (
       <div>
-        Applications
+        Events
       </div>
     )
   }
