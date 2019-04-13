@@ -11,7 +11,7 @@ import { send } from '../misc/response'
 const router = express.Router()
 
 router.get('/', (req, res) => {
-  send({ 'pantip-trend-visualization': 'api' }, req, res)
+  send({ 'project-name': 'api' }, req, res)
 })
 
 router.use('/events', EventRouter)
